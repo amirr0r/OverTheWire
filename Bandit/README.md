@@ -38,7 +38,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [ ] [Level 31 → Level 32](#level-31--level-32)
 
 ## Wargames
-
+Checkout this : [SSH from your Browser](https://shellngn.com/)
 ```bash
 $ tldr ssh
 
