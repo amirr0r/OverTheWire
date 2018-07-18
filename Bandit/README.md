@@ -149,6 +149,21 @@ bandit4@bandit:~/inhere$
 ```
 ---
 ### [Level 4 → Level 5](http://overthewire.org/wargames/bandit/bandit5.html)
+```
+bandit5@bandit:~$ ls
+inhere
+bandit5@bandit:~$ cd inhere/
+bandit5@bandit:~/inhere$ ls
+maybehere00  maybehere02  maybehere04  maybehere06  maybehere08  maybehere10  maybehere12  maybehere14  maybehere16  maybehere18
+maybehere01  maybehere03  maybehere05  maybehere07  maybehere09  maybehere11  maybehere13  maybehere15  maybehere17  maybehere19
+bandit5@bandit:~/inhere$ # lol, we know the filesize is 1033 bytes. Let's try with the find command
+bandit5@bandit:~/inhere$ man find
+bandit5@bandit:~/inhere$ find . -size 1033c
+./maybehere07/.file2
+bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        bandit5@bandit:~/inhere$
+```
 ---
 ### [Level 5 → Level 6](http://overthewire.org/wargames/bandit/bandit6.html)
 ---
