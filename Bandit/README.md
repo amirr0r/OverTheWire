@@ -83,6 +83,27 @@ boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ```
 ---
 ### [Level 0 → Level 1](http://overthewire.org/wargames/bandit/bandit1.html)
+```
+bandit1@bandit:~$ ls      
+-
+bandit1@bandit:~$ ls -la
+total 24
+-rw-r-----  1 bandit2 bandit1   33 Dec 28  2017 -
+drwxr-xr-x  2 root    root    4096 Dec 28  2017 .
+drwxr-xr-x 34 root    root    4096 Jul 15 20:51 ..
+-rw-r--r--  1 root    root     220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 root    root    3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 root    root     655 Jun 24  2016 .profile
+bandit1@bandit:~$ cat -
+^C
+bandit1@bandit:~$ # too long, let's try with vim
+bandit1@bandit:~$ vim -
+Vim: Reading from stdin...
+^C^C^C^C^C
+bandit1@bandit:~$ # too long, let's try another way
+bandit1@bandit:~$ cat ./-
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+```
 ---
 ### [Level 1 → Level 2](http://overthewire.org/wargames/bandit/bandit2.html)
 ---
