@@ -106,6 +106,13 @@ CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 ```
 ---
 ### [Level 1 → Level 2](http://overthewire.org/wargames/bandit/bandit2.html)
+```
+bandit2@bandit:~$ ls
+spaces in this filename
+bandit2@bandit:~$ cat "spaces in this filename" 
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+bandit2@bandit:~$
+```
 ---
 ### [Level 2 → Level 3](http://overthewire.org/wargames/bandit/bandit3.html)
 ---
