@@ -73,7 +73,7 @@ $ tldr ssh
 ```
 
 ### [Level 0](http://overthewire.org/wargames/bandit/bandit0.html)
-```
+```bash
 $ ssh bandit0@bandit.labs.overthewire.org -p 2220
 # bandit0@bandit.labs.overthewire.org's password:
 bandit0@bandit:~$ ls
@@ -83,7 +83,7 @@ boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ```
 ---
 ### [Level 0 → Level 1](http://overthewire.org/wargames/bandit/bandit1.html)
-```
+```bash
 bandit1@bandit:~$ ls      
 -
 bandit1@bandit:~$ ls -la
@@ -106,7 +106,7 @@ CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 ```
 ---
 ### [Level 1 → Level 2](http://overthewire.org/wargames/bandit/bandit2.html)
-```
+```bash
 bandit2@bandit:~$ ls
 spaces in this filename
 bandit2@bandit:~$ cat "spaces in this filename" 
@@ -128,6 +128,25 @@ bandit3@bandit:~/inhere$
 ```
 ---
 ### [Level 3 → Level 4](http://overthewire.org/wargames/bandit/bandit4.html)
+```bash
+bandit4@bandit:~$ ls
+inhere
+bandit4@bandit:~$ cd inhere/
+bandit4@bandit:~/inhere$ ls
+-file00  -file01  -file02  -file03  -file04  -file05  -file06  -file07  -file08  -file09
+bandit4@bandit:~/inhere$ cat ./*
+ykC6q�+���z�C|���M�     �rkA����A����L�
+                                       ��]�SN?�r+�l��2��iń:5���mp6�W{�
+                                                                             /�
+                                                                               �����%�R�O��,-�
+                                                                                                ����t���T��W��Lv�<d���3q�
+                                                                                                                         &�=�[_��`ɝ�m�=�`�V�zs�9��_o˔�M@�Z������� ���VƊ\%��+��!G kT�8��Õxj�ys�Ƶ�ʑjꮥOkoReBOKuIDDepwhWk7jZC0RTdopnAYKh
+����&��ڛ���[̹2��~!\ �����   R��
+                              P���к1�=?G0���D���Ui,�Wbandit4@bandit:~/inhere$ # ...
+bandit4@bandit:~/inhere$ cat ./"-file07"
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+bandit4@bandit:~/inhere$ 
+```
 ---
 ### [Level 4 → Level 5](http://overthewire.org/wargames/bandit/bandit5.html)
 ---
