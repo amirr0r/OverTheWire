@@ -3,12 +3,12 @@
 The Bandit wargame is aimed at absolute beginners.
 
 ## Summary
-- [ ] [Level 0](#level-0)
-- [ ] [Level 0 → Level 1](#level-0--level-1)
-- [ ] [Level 1 → Level 2](#level-1--level-2)
-- [ ] [Level 2 → Level 3](#level-2--level-3)
-- [ ] [Level 3 → Level 4](#level-3--level-4)
-- [ ] [Level 4 → Level 5](#level-4--level-5)
+- [x] [Level 0](#level-0)
+- [x] [Level 0 → Level 1](#level-0--level-1)
+- [x] [Level 1 → Level 2](#level-1--level-2)
+- [x] [Level 2 → Level 3](#level-2--level-3)
+- [x] [Level 3 → Level 4](#level-3--level-4)
+- [x] [Level 4 → Level 5](#level-4--level-5)
 - [ ] [Level 5 → Level 6](#level-5--level-6)
 - [ ] [Level 6 → Level 7](#level-6--level-7)
 - [ ] [Level 7 → Level 8](#level-7--level-8)
