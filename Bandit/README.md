@@ -115,6 +115,17 @@ bandit2@bandit:~$
 ```
 ---
 ### [Level 2 → Level 3](http://overthewire.org/wargames/bandit/bandit3.html)
+```
+bandit3@bandit:~$ ls
+inhere
+bandit3@bandit:~$ cd inhere/
+bandit3@bandit:~/inhere$ ls
+bandit3@bandit:~/inhere$ ls -a
+.  ..  .hidden
+bandit3@bandit:~/inhere$ cat .hidden 
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+bandit3@bandit:~/inhere$ 
+```
 ---
 ### [Level 3 → Level 4](http://overthewire.org/wargames/bandit/bandit4.html)
 ---
