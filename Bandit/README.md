@@ -12,7 +12,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 5 → Level 6](#level-5--level-6)
 - [x] [Level 6 → Level 7](#level-6--level-7)
 - [x] [Level 7 → Level 8](#level-7--level-8)
-- [ ] [Level 8 → Level 9](#level-8--level-9)
+- [x] [Level 8 → Level 9](#level-8--level-9)
 - [ ] [Level 9 → Level 10](#level-9--level-10)
 - [ ] [Level 10 → Level 11](#level-10--level-11)
 - [ ] [Level 11 → Level 12](#level-11--level-12)
@@ -195,8 +195,11 @@ millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 ```
 ---
 ### [Level 8 → Level 9](http://overthewire.org/wargames/bandit/bandit9.html)
+Thanks to [tldr uniq](https://tldr.ostera.io/uniq)
 ```bash
-
+bandit8@bandit:~$ sort data.txt | uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+bandit8@bandit:~$ 
 ```
 ---
 ### [Level 9 → Level 10](http://overthewire.org/wargames/bandit/bandit10.html)
