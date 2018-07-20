@@ -15,7 +15,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 8 → Level 9](#level-8--level-9)
 - [x] [Level 9 → Level 10](#level-9--level-10)
 - [x] [Level 10 → Level 11](#level-10--level-11)
-- [ ] [Level 11 → Level 12](#level-11--level-12)
+- [x] [Level 11 → Level 12](#level-11--level-12)
 - [ ] [Level 12 → Level 13](#level-12--level-13)
 - [ ] [Level 13 → Level 14](#level-13--level-14)
 - [ ] [Level 14 → Level 15](#level-14--level-15)
@@ -221,8 +221,13 @@ bandit10@bandit:~$
 ```
 ---
 ### [Level 11 → Level 12](http://overthewire.org/wargames/bandit/bandit12.html)
+Thanks to [tr rot13](https://stackoverflow.com/questions/5442436/using-rot13-and-tr-command-for-having-an-encrypted-email-address)
 ```bash
-
+bandit11@bandit:~$ cat data.txt 
+Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh
+bandit11@bandit:~$ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+bandit11@bandit:~$ 
 ```
 ---
 ### [Level 12 → Level 13](http://overthewire.org/wargames/bandit/bandit13.html)
