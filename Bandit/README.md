@@ -14,7 +14,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 7 → Level 8](#level-7--level-8)
 - [x] [Level 8 → Level 9](#level-8--level-9)
 - [x] [Level 9 → Level 10](#level-9--level-10)
-- [ ] [Level 10 → Level 11](#level-10--level-11)
+- [x] [Level 10 → Level 11](#level-10--level-11)
 - [ ] [Level 11 → Level 12](#level-11--level-12)
 - [ ] [Level 12 → Level 13](#level-12--level-13)
 - [ ] [Level 13 → Level 14](#level-13--level-14)
