@@ -9,7 +9,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 2 → Level 3](#level-2--level-3)
 - [x] [Level 3 → Level 4](#level-3--level-4)
 - [x] [Level 4 → Level 5](#level-4--level-5)
-- [ ] [Level 5 → Level 6](#level-5--level-6)
+- [x] [Level 5 → Level 6](#level-5--level-6)
 - [ ] [Level 6 → Level 7](#level-6--level-7)
 - [ ] [Level 7 → Level 8](#level-7--level-8)
 - [ ] [Level 8 → Level 9](#level-8--level-9)
@@ -170,8 +170,20 @@ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 ```
 ---
 ### [Level 6 → Level 7](http://overthewire.org/wargames/bandit/bandit7.html)
+Check [How can I exclude all *"permission denied"* messages from **"find"** ?](https://stackoverflow.com/questions/762348/how-can-i-exclude-all-permission-denied-messages-from-find)
 ```bash
-
+bandit6@bandit:~$ find / -user bandit7 -group bandit6 -size 33c
+find: '/etc/ssl/private': Permission denied
+find: '/etc/polkit-1/localauthority': Permission denied
+find: '/run/lxcfs': Permission denied
+find: '/run/user/11007': Permission denied
+find: '/run/user/11002': Permission denied
+#...
+bandit6@bandit:~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+/var/lib/dpkg/info/bandit7.password
+bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+bandit6@bandit:~$ 
 ```
 ---
 ### [Level 7 → Level 8](http://overthewire.org/wargames/bandit/bandit8.html)
