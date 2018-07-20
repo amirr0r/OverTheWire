@@ -213,7 +213,11 @@ bandit9@bandit:~$
 ---
 ### [Level 10 → Level 11](http://overthewire.org/wargames/bandit/bandit11.html)
 ```bash
-
+bandit10@bandit:~$ cat data.txt 
+VGhlIHBhc3N3b3JkIGlzIElGdWt3S0dzRlc4TU9xM0lSRnFyeEUxaHhUTkViVVBSCg==
+bandit10@bandit:~$ base64 -d data.txt 
+The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+bandit10@bandit:~$ 
 ```
 ---
 ### [Level 11 → Level 12](http://overthewire.org/wargames/bandit/bandit12.html)
