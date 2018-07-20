@@ -170,54 +170,132 @@ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 ```
 ---
 ### [Level 6 → Level 7](http://overthewire.org/wargames/bandit/bandit7.html)
+```bash
+
+```
 ---
 ### [Level 7 → Level 8](http://overthewire.org/wargames/bandit/bandit8.html)
+```bash
+
+```
 ---
 ### [Level 8 → Level 9](http://overthewire.org/wargames/bandit/bandit9.html)
+```bash
+
+```
 ---
 ### [Level 9 → Level 10](http://overthewire.org/wargames/bandit/bandit10.html)
+```bash
+
+```
 ---
 ### [Level 10 → Level 11](http://overthewire.org/wargames/bandit/bandit11.html)
+```bash
+
+```
 ---
 ### [Level 11 → Level 12](http://overthewire.org/wargames/bandit/bandit12.html)
+```bash
+
+```
 ---
 ### [Level 12 → Level 13](http://overthewire.org/wargames/bandit/bandit13.html)
+```bash
+
+```
 ---
 ### [Level 13 → Level 14](http://overthewire.org/wargames/bandit/bandit14.html)
+```bash
+
+```
 ---
 ### [Level 14 → Level 15](http://overthewire.org/wargames/bandit/bandit15.html)
+```bash
+
+```
 ---
 ### [Level 15 → Level 16](http://overthewire.org/wargames/bandit/bandit16.html)
+```bash
+
+```
 ---
 ### [Level 16 → Level 17](http://overthewire.org/wargames/bandit/bandit17.html)
+```bash
+
+```
 ---
 ### [Level 17 → Level 18](http://overthewire.org/wargames/bandit/bandit18.html)
+```bash
+
+```
 ---
 ### [Level 18 → Level 19](http://overthewire.org/wargames/bandit/bandit19.html)
+```bash
+
+```
 ---
 ### [Level 19 → Level 20](http://overthewire.org/wargames/bandit/bandit20.html)
+```bash
+
+```
 ---
 ### [Level 20 → Level 21](http://overthewire.org/wargames/bandit/bandit21.html)
+```bash
+
+```
 ---
 ### [Level 21 → Level 22](http://overthewire.org/wargames/bandit/bandit22.html)
+```bash
+
+```
 ---
 ### [Level 22 → Level 23](http://overthewire.org/wargames/bandit/bandit23.html)
+```bash
+
+```
 ---
 ### [Level 23 → Level 24](http://overthewire.org/wargames/bandit/bandit24.html)
+```bash
+
+```
 ---
 ### [Level 24 → Level 25](http://overthewire.org/wargames/bandit/bandit25.html)
+```bash
+
+```
 ---
 ### [Level 25 → Level 26](http://overthewire.org/wargames/bandit/bandit26.html)
+```bash
+
+```
 ---
 ### [Level 26 → Level 27](http://overthewire.org/wargames/bandit/bandit27.html)
+```bash
+
+```
 ---
 ### [Level 27 → Level 28](http://overthewire.org/wargames/bandit/bandit28.html)
+```bash
+
+```
 ---
 ### [Level 28 → Level 29](http://overthewire.org/wargames/bandit/bandit29.html)
+```bash
+
+```
 ---
 ### [Level 29 → Level 30](http://overthewire.org/wargames/bandit/bandit30.html)
+```bash
+
+```
 ---
 ### [Level 30 → Level 31](http://overthewire.org/wargames/bandit/bandit31.html)
+```bash
+
+```
 ---
 ### [Level 31 → Level 32](http://overthewire.org/wargames/bandit/bandit32.html)
+```bash
+
+```
 ---
