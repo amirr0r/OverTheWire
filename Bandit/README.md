@@ -75,6 +75,10 @@ $ tldr ssh
 ### [Level 0](http://overthewire.org/wargames/bandit/bandit0.html)
 ```bash
 $ ssh bandit0@bandit.labs.overthewire.org -p 2220
+```
+---
+### [Level 0 → Level 1](http://overthewire.org/wargames/bandit/bandit1.html)
+```bash
 # bandit0@bandit.labs.overthewire.org's password:
 bandit0@bandit:~$ ls
 readme
@@ -82,7 +86,7 @@ bandit0@bandit:~$ cat readme
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ```
 ---
-### [Level 0 → Level 1](http://overthewire.org/wargames/bandit/bandit1.html)
+### [Level 1 → Level 2](http://overthewire.org/wargames/bandit/bandit2.html)
 ```bash
 bandit1@bandit:~$ ls      
 -
@@ -105,8 +109,8 @@ bandit1@bandit:~$ cat ./-
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 ```
 ---
-### [Level 1 → Level 2](http://overthewire.org/wargames/bandit/bandit2.html)
-```bash
+### [Level 2 → Level 3](http://overthewire.org/wargames/bandit/bandit3.html)
+```
 bandit2@bandit:~$ ls
 spaces in this filename
 bandit2@bandit:~$ cat "spaces in this filename" 
@@ -114,8 +118,8 @@ UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 bandit2@bandit:~$
 ```
 ---
-### [Level 2 → Level 3](http://overthewire.org/wargames/bandit/bandit3.html)
-```
+### [Level 3 → Level 4](http://overthewire.org/wargames/bandit/bandit4.html)
+```bash
 bandit3@bandit:~$ ls
 inhere
 bandit3@bandit:~$ cd inhere/
@@ -127,8 +131,8 @@ pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 bandit3@bandit:~/inhere$ 
 ```
 ---
-### [Level 3 → Level 4](http://overthewire.org/wargames/bandit/bandit4.html)
-```bash
+### [Level 4 → Level 5](http://overthewire.org/wargames/bandit/bandit5.html)
+```
 bandit4@bandit:~$ ls
 inhere
 bandit4@bandit:~$ cd inhere/
@@ -148,8 +152,8 @@ koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 bandit4@bandit:~/inhere$ 
 ```
 ---
-### [Level 4 → Level 5](http://overthewire.org/wargames/bandit/bandit5.html)
-```
+### [Level 5 → Level 6](http://overthewire.org/wargames/bandit/bandit6.html)
+```bash
 bandit5@bandit:~$ ls
 inhere
 bandit5@bandit:~$ cd inhere/
@@ -164,8 +168,6 @@ bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         bandit5@bandit:~/inhere$
 ```
----
-### [Level 5 → Level 6](http://overthewire.org/wargames/bandit/bandit6.html)
 ---
 ### [Level 6 → Level 7](http://overthewire.org/wargames/bandit/bandit7.html)
 ---
