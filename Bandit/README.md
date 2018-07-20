@@ -11,7 +11,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 4 → Level 5](#level-4--level-5)
 - [x] [Level 5 → Level 6](#level-5--level-6)
 - [x] [Level 6 → Level 7](#level-6--level-7)
-- [ ] [Level 7 → Level 8](#level-7--level-8)
+- [x] [Level 7 → Level 8](#level-7--level-8)
 - [ ] [Level 8 → Level 9](#level-8--level-9)
 - [ ] [Level 9 → Level 10](#level-9--level-10)
 - [ ] [Level 10 → Level 11](#level-10--level-11)
@@ -188,7 +188,10 @@ bandit6@bandit:~$
 ---
 ### [Level 7 → Level 8](http://overthewire.org/wargames/bandit/bandit8.html)
 ```bash
-
+bandit7@bandit:~$ ls
+data.txt
+bandit7@bandit:~$ cat data.txt | grep "millionth"
+millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 ```
 ---
 ### [Level 8 → Level 9](http://overthewire.org/wargames/bandit/bandit9.html)
