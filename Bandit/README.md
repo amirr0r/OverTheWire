@@ -16,7 +16,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 9 → Level 10](#level-9--level-10)
 - [x] [Level 10 → Level 11](#level-10--level-11)
 - [x] [Level 11 → Level 12](#level-11--level-12)
-- [ ] [Level 12 → Level 13](#level-12--level-13)
+- [x] [Level 12 → Level 13](#level-12--level-13)
 - [ ] [Level 13 → Level 14](#level-13--level-14)
 - [ ] [Level 14 → Level 15](#level-14--level-15)
 - [ ] [Level 15 → Level 16](#level-15--level-16)
@@ -231,8 +231,64 @@ bandit11@bandit:~$
 ```
 ---
 ### [Level 12 → Level 13](http://overthewire.org/wargames/bandit/bandit13.html)
-```bash
 
+man `file`, `xdd`, `bzip2`, `tar`, `gzip` commands and check [how to reverse hexdump file](https://stackoverflow.com/questions/43724144/hexdump-command-reverse) are essential for this chall !
+
+```bash
+bandit12@bandit:~$ mkdir /tmp/manip
+bandit12@bandit:~$ cp data.txt /tmp/manip/data.txt 
+bandit12@bandit:~$ cd /tmp/manip
+bandit12@bandit:/tmp/manip$ ls
+data.txt
+bandit12@bandit:/tmp/manip$ xxd -r data.txt > data.bin
+bandit12@bandit:/tmp/manip$ file data.bin
+data.bin: gzip compressed data, was "data2.bin", last modified: Thu Dec 28 13:34:36 2017, max compression, from Unix
+bandit12@bandit:/tmp/manip$ mv data.bin data.gz
+bandit12@bandit:/tmp/manip$ gzip -d data.gz 
+bandit12@bandit:/tmp/manip$ ls 
+data  data.txt
+bandit12@bandit:/tmp/manip$ file data
+data: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/manip$ mv data data.bz2
+bandit12@bandit:/tmp/manip$ bzip2 -d data.bz2 
+bandit12@bandit:/tmp/manip$ ls
+data  data.txt
+bandit12@bandit:/tmp/manip$ file data
+data: gzip compressed data, was "data4.bin", last modified: Thu Dec 28 13:34:36 2017, max compression, from Unix
+bandit12@bandit:/tmp/manip$ mv data data.gz
+bandit12@bandit:/tmp/manip$ gzip -d data.gz 
+bandit12@bandit:/tmp/manip$ ls
+data  data.txt
+bandit12@bandit:/tmp/manip$ file data
+data: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/manip$ mv data data.tar
+bandit12@bandit:/tmp/manip$ tar xvf data.tar 
+data5.bin
+bandit12@bandit:/tmp/manip$ file data5.bin 
+data5.bin: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/manip$ mv data5.bin data5.tar
+bandit12@bandit:/tmp/manip$ tar xvf data5.tar 
+data6.bin
+bandit12@bandit:/tmp/manip$ file data6.bin 
+data6.bin: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/manip$ bzip2 -d data6.bz2 
+bandit12@bandit:/tmp/manip$ ls
+data.txt  data6
+bandit12@bandit:/tmp/manip$ file data6 
+data6: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/manip$ mv data6 data6.tar
+bandit12@bandit:/tmp/manip$ tar xvf data6.tar 
+data8.bin
+bandit12@bandit:/tmp/manip$ file data8.bin 
+data8.bin: gzip compressed data, was "data9.bin", last modified: Thu Dec 28 13:34:36 2017, max compression, from Unix
+bandit12@bandit:/tmp/manip$ mv data8.bin data8.gz
+bandit12@bandit:/tmp/manip$ gzip -d data8.gz 
+bandit12@bandit:/tmp/manip$ ls
+data.txt  data6.tar  data8
+bandit12@bandit:/tmp/manip$ file data8 
+data8: ASCII text
+bandit12@bandit:/tmp/manip$ cat data8 
+The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 ```
 ---
 ### [Level 13 → Level 14](http://overthewire.org/wargames/bandit/bandit14.html)
