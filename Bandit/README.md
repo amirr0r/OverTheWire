@@ -232,7 +232,7 @@ bandit11@bandit:~$
 ---
 ### [Level 12 → Level 13](http://overthewire.org/wargames/bandit/bandit13.html)
 
-man `file`, `xdd`, `bzip2`, `tar`, `gzip` commands and check [how to reverse hexdump file](https://stackoverflow.com/questions/43724144/hexdump-command-reverse) are essential for this chall !
+man `file`, `xxd`, `bzip2`, `tar`, `gzip` commands and check [how to reverse hexdump file](https://stackoverflow.com/questions/43724144/hexdump-command-reverse) are essential for this chall !
 
 ```bash
 bandit12@bandit:~$ mkdir /tmp/manip
