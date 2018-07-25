@@ -19,7 +19,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 12 → Level 13](#level-12--level-13)
 - [x] [Level 13 → Level 14](#level-13--level-14)
 - [x] [Level 14 → Level 15](#level-14--level-15)
-- [ ] [Level 15 → Level 16](#level-15--level-16)
+- [x] [Level 15 → Level 16](#level-15--level-16)
 - [ ] [Level 16 → Level 17](#level-16--level-17)
 - [ ] [Level 17 → Level 18](#level-17--level-18)
 - [ ] [Level 18 → Level 19](#level-18--level-19)
@@ -345,8 +345,21 @@ bandit14@bandit:~$
 ```
 ---
 ### [Level 15 → Level 16](http://overthewire.org/wargames/bandit/bandit16.html)
+Thanks to man pages & [connect w ssl encryption linux command](https://serverfault.com/questions/476068/can-netcat-talk-to-an-encrypted-port/476073)
 ```bash
+bandit15@bandit:~$ man s_client
+bandit15@bandit:~$ openssl s_client -quiet -connect localhost:30001 < /etc/bandit_pass/bandit15
+depth=0 CN = bandit
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = bandit
+verify return:1
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd
 
+bandit15@bandit:~$ # You can also use :
+bandit15@bandit:~$ # 1) openssl s_client -ign_eof -connect localhost:30001 < /etc/bandit_pass/bandit15
+bandit15@bandit:~$ # 2) ncat --ssl 127.0.0.1 30001 < /etc/bandit_pass/bandit15
 ```
 ---
 ### [Level 16 → Level 17](http://overthewire.org/wargames/bandit/bandit17.html)
