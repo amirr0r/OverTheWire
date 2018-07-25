@@ -450,7 +450,19 @@ bandit17@bandit:~$ # kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd is the password
 ---
 ### [Level 18 → Level 19](http://overthewire.org/wargames/bandit/bandit19.html)
 ```bash
+bandit17@bandit:~$ ssh bandit18@localhost                  
+# ...
+bandit18@localhost's password: 
 Byebye!
+Connection to localhost closed.
+bandit17@bandit:~$ man ssh
+bandit17@bandit:~$ ssh bandit18@localhost -t "cat readme" 
+# ...
+bandit18@localhost's password: 
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+Connection to localhost closed.
+bandit16@bandit:~$ # IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x is the password
+
 ```
 ---
 ### [Level 19 → Level 20](http://overthewire.org/wargames/bandit/bandit20.html)
