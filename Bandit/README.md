@@ -18,7 +18,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 11 → Level 12](#level-11--level-12)
 - [x] [Level 12 → Level 13](#level-12--level-13)
 - [x] [Level 13 → Level 14](#level-13--level-14)
-- [ ] [Level 14 → Level 15](#level-14--level-15)
+- [x] [Level 14 → Level 15](#level-14--level-15)
 - [ ] [Level 15 → Level 16](#level-15--level-16)
 - [ ] [Level 16 → Level 17](#level-16--level-17)
 - [ ] [Level 17 → Level 18](#level-17--level-18)
@@ -337,7 +337,11 @@ bandit14@bandit:~$
 ---
 ### [Level 14 → Level 15](http://overthewire.org/wargames/bandit/bandit15.html)
 ```bash
+bandit14@bandit:~$ nc localhost 30000 < /etc/bandit_pass/bandit14
+Correct!
+BfMYroe26WYalil77FoDi9qh59eK5xNr
 
+bandit14@bandit:~$ 
 ```
 ---
 ### [Level 15 → Level 16](http://overthewire.org/wargames/bandit/bandit16.html)
