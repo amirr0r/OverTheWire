@@ -21,7 +21,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 14 → Level 15](#level-14--level-15)
 - [x] [Level 15 → Level 16](#level-15--level-16)
 - [x] [Level 16 → Level 17](#level-16--level-17)
-- [ ] [Level 17 → Level 18](#level-17--level-18)
+- [x] [Level 17 → Level 18](#level-17--level-18)
 - [ ] [Level 18 → Level 19](#level-18--level-19)
 - [ ] [Level 19 → Level 20](#level-19--level-20)
 - [ ] [Level 20 → Level 21](#level-20--level-21)
@@ -432,12 +432,12 @@ bandit16@bandit:~$ (ncat --ssl 127.0.0.1 31790 < /etc/bandit_pass/bandit16) > /t
 bandit16@bandit:~$ vim /tmp/file # deleting the first line with 'Correct!'
 bandit16@bandit:~$ chmod 700 /tmp/file # change permission because it's a PRIVATE key !
 bandit16@bandit:~$ ssh -i /tmp/file bandit17@localhost
-Could not create directory '/home/bandit16/.ssh'.
-The authenticity of host 'localhost (127.0.0.1)' can't be established.
-ECDSA key fingerprint is SHA256:98UL0ZWr85496EtCRkKlo20X3OPnyPSB5tB5RPbhczc.
-Are you sure you want to continue connecting (yes/no)? yes
-Failed to add the host to the list of known hosts (/home/bandit16/.ssh/known_hosts).
 # ...
+bandit17@bandit:~$
+```
+---
+### [Level 17 → Level 18](http://overthewire.org/wargames/bandit/bandit18.html)
+```bash
 bandit17@bandit:~$ ls
 passwords.new  passwords.old
 bandit17@bandit:~$ diff passwords.new passwords.old 
@@ -446,11 +446,6 @@ bandit17@bandit:~$ diff passwords.new passwords.old
 ---
 > 6vcSC74ROI95NqkKaeEC2ABVMDX9TyUr
 bandit17@bandit:~$ # kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd is the password
-```
----
-### [Level 17 → Level 18](http://overthewire.org/wargames/bandit/bandit18.html)
-```bash
-
 ```
 ---
 ### [Level 18 → Level 19](http://overthewire.org/wargames/bandit/bandit19.html)
