@@ -22,7 +22,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 15 → Level 16](#level-15--level-16)
 - [x] [Level 16 → Level 17](#level-16--level-17)
 - [x] [Level 17 → Level 18](#level-17--level-18)
-- [ ] [Level 18 → Level 19](#level-18--level-19)
+- [x] [Level 18 → Level 19](#level-18--level-19)
 - [ ] [Level 19 → Level 20](#level-19--level-20)
 - [ ] [Level 20 → Level 21](#level-20--level-21)
 - [ ] [Level 21 → Level 22](#level-21--level-22)
@@ -450,7 +450,7 @@ bandit17@bandit:~$ # kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd is the password
 ---
 ### [Level 18 → Level 19](http://overthewire.org/wargames/bandit/bandit19.html)
 ```bash
-
+Byebye!
 ```
 ---
 ### [Level 19 → Level 20](http://overthewire.org/wargames/bandit/bandit20.html)
