@@ -461,7 +461,7 @@ bandit17@bandit:~$ ssh bandit18@localhost -t "cat readme"
 bandit18@localhost's password: 
 IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 Connection to localhost closed.
-bandit16@bandit:~$ # IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x is the password
+bandit17@bandit:~$ # IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x is the password
 
 ```
 ---
