@@ -23,7 +23,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 16 → Level 17](#level-16--level-17)
 - [x] [Level 17 → Level 18](#level-17--level-18)
 - [x] [Level 18 → Level 19](#level-18--level-19)
-- [ ] [Level 19 → Level 20](#level-19--level-20)
+- [x] [Level 19 → Level 20](#level-19--level-20)
 - [ ] [Level 20 → Level 21](#level-20--level-21)
 - [ ] [Level 21 → Level 22](#level-21--level-22)
 - [ ] [Level 22 → Level 23](#level-22--level-23)
@@ -467,7 +467,26 @@ bandit17@bandit:~$ # IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x is the password
 ---
 ### [Level 19 → Level 20](http://overthewire.org/wargames/bandit/bandit20.html)
 ```bash
-
+bandit19@bandit:~$ ll
+total 28
+drwxr-xr-x  2 root     root     4096 Dec 28  2017 ./
+drwxr-xr-x 42 root     root     4096 Jul 22 18:42 ../
+-rw-r--r--  1 root     root      220 Sep  1  2015 .bash_logout
+-rw-r--r--  1 root     root     3771 Sep  1  2015 .bashrc
+-rw-r--r--  1 root     root      655 Jun 24  2016 .profile
+-rwsr-x---  1 bandit20 bandit19 7408 Dec 28  2017 bandit20-do*
+bandit19@bandit:~$ ./bandit20-do 
+Run a command as another user.
+  Example: ./bandit20-do id
+bandit19@bandit:~$ ./bandit20-do id
+uid=11019(bandit19) gid=11019(bandit19) euid=11020(bandit20) groups=11019(bandit19)
+bandit19@bandit:~$ ./bandit20-do ls
+bandit20-do
+bandit19@bandit:~$ ./bandit20-do whoami
+bandit20
+bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+bandit19@bandit:~$ 
 ```
 ---
 ### [Level 20 → Level 21](http://overthewire.org/wargames/bandit/bandit21.html)
