@@ -495,11 +495,20 @@ We nee to use tmux which is a terminal multiplexer. Some commands :
 - `Ctrl + b` : prefix key to run tmux commands 
 - `Ctrl + b + %` :  Split the current pane into two, left and right
 - `Ctrl + b + "` :  Split the current pane into two, left and right
-- `Ctrl + b + ` Left / Right / Up / Down :  Change to the pane above, below, to the left, or to the right of the x current pane.
+- `Ctrl + b + ` Left, Right, Up, Down :  Change to the pane above, below, to the left, or to the right of the x current pane.
 - `Ctrl + b + o` :  Swap terminal (Select the next pane in the current window)
 
 ```bash
-
+bandit20@bandit:~$ nc -l 4242                               xbandit20@bandit:~$ ./suconnect 4242 
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j                            xRead: GbKksEFF4yrVs6il55v6gwY5aVje5f0j  
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr                            xPassword matches, sending next password 
+bandit20@bandit:~$                                          xbandit20@bandit:~$
+                                                            x
+                                                            x
+                                                            x
+                                                            x
+                                                            x
+                                                            x
 ```
 ---
 ### [Level 21 → Level 22](http://overthewire.org/wargames/bandit/bandit22.html)
