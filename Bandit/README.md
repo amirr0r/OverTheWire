@@ -600,7 +600,7 @@ bandit23@bandit:/tmp/bam$
 ```
 ---
 ### [Level 24 → Level 25](http://overthewire.org/wargames/bandit/bandit25.html)
-```bash
+```
 bandit24@bandit:~$ cd /tmp/
 bandit24@bandit:/tmp$ cd bam
 bandit24@bandit:/tmp/bam$ ls
