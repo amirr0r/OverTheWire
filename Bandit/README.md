@@ -24,7 +24,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 17 → Level 18](#level-17--level-18)
 - [x] [Level 18 → Level 19](#level-18--level-19)
 - [x] [Level 19 → Level 20](#level-19--level-20)
-- [ ] [Level 20 → Level 21](#level-20--level-21)
+- [x] [Level 20 → Level 21](#level-20--level-21)
 - [ ] [Level 21 → Level 22](#level-21--level-22)
 - [ ] [Level 22 → Level 23](#level-22--level-23)
 - [ ] [Level 23 → Level 24](#level-23--level-24)
@@ -490,6 +490,14 @@ bandit19@bandit:~$
 ```
 ---
 ### [Level 20 → Level 21](http://overthewire.org/wargames/bandit/bandit21.html)
+We nee to use tmux which is a terminal multiplexer. Some commands :
+- `tmux` : start a tmux session
+- `Ctrl + b` : prefix key to run tmux commands 
+- `Ctrl + b + %` :  Split the current pane into two, left and right
+- `Ctrl + b + "` :  Split the current pane into two, left and right
+- `Ctrl + b + ` Left / Right / Up / Down :  Change to the pane above, below, to the left, or to the right of the x current pane.
+- `Ctrl + b + o` :  Swap terminal (Select the next pane in the current window)
+
 ```bash
 
 ```
