@@ -25,7 +25,7 @@ The Bandit wargame is aimed at absolute beginners.
 - [x] [Level 18 → Level 19](#level-18--level-19)
 - [x] [Level 19 → Level 20](#level-19--level-20)
 - [x] [Level 20 → Level 21](#level-20--level-21)
-- [ ] [Level 21 → Level 22](#level-21--level-22)
+- [x] [Level 21 → Level 22](#level-21--level-22)
 - [ ] [Level 22 → Level 23](#level-22--level-23)
 - [ ] [Level 23 → Level 24](#level-23--level-24)
 - [ ] [Level 24 → Level 25](#level-24--level-25)
@@ -513,7 +513,24 @@ bandit20@bandit:~$                                          xbandit20@bandit:~$
 ---
 ### [Level 21 → Level 22](http://overthewire.org/wargames/bandit/bandit22.html)
 ```bash
-
+bandit21@bandit:~$ ls /etc/cron.d/
+cronjob_bandit22  cronjob_bandit23  cronjob_bandit24  popularity-contest
+bandit21@bandit:~$ 
+bandit21@bandit:~$ 
+bandit21@bandit:~$ cat /etc/cron.d/cronjob_bandit22
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+bandit21@bandit:~$ 
+bandit21@bandit:~$ 
+bandit21@bandit:~$ cat /usr/bin/cronjob_bandit22.sh    
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+bandit21@bandit:~$    
+bandit21@bandit:~$ 
+bandit21@bandit:~$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+bandit21@bandit:~$ 
 ```
 ---
 ### [Level 22 → Level 23](http://overthewire.org/wargames/bandit/bandit23.html)
